@@ -6,8 +6,7 @@ MAB — FAB that can actually float on the screen.
 
 
 ## Example
-
-
+https://github.com/KovshefulCoder/MAB-private/assets/84292117/ca326fa1-5196-41c9-8f58-856fe99e4295
 
 
 ## Introduction (and justification xD)
