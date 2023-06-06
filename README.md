@@ -5,8 +5,8 @@ MAB — FAB that can actually float on the screen.
 [Click here to learn how to use it](https://github.com/KovshefulCoder/MAB/tree/master#how-to-use)
 
 
-## Example
-https://github.com/KovshefulCoder/MAB-private/assets/84292117/ca326fa1-5196-41c9-8f58-856fe99e4295
+## Example (located in [app folder](https://github.com/KovshefulCoder/MAB/tree/master/app))
+https://github.com/KovshefulCoder/MAB/assets/84292117/3fd26237-0352-4a5f-b6da-3b47192ad03a
 
 
 ## Introduction (and justification xD)
@@ -15,7 +15,7 @@ For me, almost all current FAB implementations are fooling you - their floating 
 
 To fight this injustice against FAB, I created this library to make it great again, to make it able to float on the screen and interact with other elements.
 
-How exactly interact? MabController connected with MAB contains an index of the list’s elements below this MAB. If it still isn't clear, I hope [an example](https://github.com/KovshefulCoder/MAB/blob/master/app/src/main/java/com/kovsheful/mabexample/MainActivity.kt) will help.
+How exactly interact? MabController connected with MAB contains an index of the list’s elements below this MAB. If it still isn't clear, I hope [an example](https://github.com/KovshefulCoder/MAB/tree/master/README.md#example-located-in-app-folder) will help.
 
 ## How to use?
 
@@ -81,20 +81,20 @@ dependencies {
     ```
     
 
-Currently, I recommend placing it like general FABs are placed, at the right bottom angle. You can use Box with Modifier.align(Alignment = BottomEnd)
+    Currently, I recommend placing it like general FABs are placed, at the right bottom angle. You can use Box with Modifier.align(Alignment = BottomEnd)
 
- (Yes, I didn't test it with Scaffold :( )
+    (Yes, I didn't test it with Scaffold :( )
 
-```kotlin
-Box() {
-    val mabController = rememberMabController()
-    ...
-    MAB(
-        modifier = Modifier.align(Alignment.BottomEnd),
-        mabController = mabController
-    )
-}
-```
+    ```kotlin
+    Box() {
+        val mabController = rememberMabController()
+        ...
+        MAB(
+            modifier = Modifier.align(Alignment.BottomEnd),
+            mabController = mabController
+        )
+    }
+    ```
 
 3. Nearby create LazyColumn (Why exactly it? [Explained here](https://github.com/KovshefulCoder/MAB/tree/master#what-next))
     
