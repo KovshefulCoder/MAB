@@ -119,16 +119,16 @@ dependencies {
         LazyColumn(
             modifier = Modifier
                 .onGloballyPositioned { coordinates ->
-                   mabController.onListElementCoordinatesChanged(
-                       it, coordinates
-                   )
-            },
+                   mabController.onListCoordinatesChanged(coordinates)
+                }
         ) {
             items(n) {
                 Row (
                     modifier = Modifier
                         .onGloballyPositioned { coordinates ->
-                   mabController.onListCoordinatesChanged(coordinates)
+                   mabController.onListElementCoordinatesChanged(
+                       it, coordinates
+                   )
             },
                 )
             }
